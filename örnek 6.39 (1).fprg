@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gamer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 05:04:01 &#214;S"/>
+        <attribute name="created" value="Z2FtZXI7REVTS1RPUC1WSTRVVEdFOzIwMjItMTEtMDQ7MDM6Mjg6MjAgw5ZTOzMwMzg="/>
+        <attribute name="edited" value="Z2FtZXI7REVTS1RPUC1WSTRVVEdFOzIwMjItMTEtMDQ7MDU6MDQ6MDEgw5ZTOzE7MzE0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Hangi say&#305;ya kadar olan as&#305;l say&#305;lar&#305;n yazd&#305;r&#305;lmas&#305;n&#305; istiyorsunuz?&quot;" newline="True"/>
+            <assign variable="b" expression="2"/>
+            <input variable="x"/>
+            <while expression="x&gt;1">
+                <while expression="x%b!=0">
+                    <assign variable="b" expression="b+1"/>
+                </while>
+                <if expression="x==b">
+                    <then>
+                        <output expression="x" newline="True"/>
+                        <assign variable="x" expression="x-1"/>
+                        <assign variable="b" expression="2"/>
+                    </then>
+                    <else>
+                        <assign variable="x" expression="x-1"/>
+                        <assign variable="b" expression="2"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
